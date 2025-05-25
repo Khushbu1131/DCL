@@ -63,6 +63,7 @@ export class CreateBookingDto {
 
   seats: number;
 }
+
 4. JWT Authentication
 
    bash:
