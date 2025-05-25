@@ -1,10 +1,16 @@
 # DCL
 1.Setup
+
     1.1 Prerequisites
+
         Node.js
+
         npm
+
         Node.js (version>=20)
+
         PostgreSQL
+
         Nest CLI
   
       bash:
