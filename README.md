@@ -120,6 +120,10 @@ Swagger UI: http://localhost:3000/api/docs
         JWT-based authentication for secure access
 
         Role-based access control: user and admin
+        
+        by default role is user.
+
+        The admin role is set manually in the database to ensure secure and controlled access to administrative privileges.
 
 10.2 Event Management
 
