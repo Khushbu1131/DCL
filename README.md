@@ -100,12 +100,15 @@ Swagger UI: http://localhost:3000/api/docs
 11.API Endpoints
 Authentication
 Method	Path	Description
-POST	/api/auth/register	Register a new user
+POST     /api/auth/register	Register a new user
+
 POST	/api/auth/login	Login with email and password
 
 Users
 Method	Path	Description	Auth & Roles
+
 GET	/api/users/admin	Admin test endpoint	JWT + admin only
+
 GET	/api/users/profile	Get current user profile	JWT
 
 
@@ -113,8 +116,11 @@ GET	/api/users/profile	Get current user profile	JWT
 
 Programs
 Method	Path	Description	Auth & Roles
+
 GET	/api/program/upcoming	List upcoming programs	Public
+
 GET	/api/program/past	List past programs	Public
+
 GET	/api/program/{name}	Get program details by name	Public
 GET	/api/program/id/{id}	Get program details by ID	Public
 GET	/api/program	List all programs (admin view)	JWT + admin only
