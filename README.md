@@ -99,7 +99,9 @@ Swagger UI: http://localhost:3000/api/docs
 
 11.API Endpoints
 Authentication
+
 Method	Path	Description
+
 POST     /api/auth/register	Register a new user
 
 POST	/api/auth/login	Login with email and password
@@ -115,6 +117,7 @@ GET	/api/users/profile	Get current user profile	JWT
 
 
 Programs
+
 Method	Path	Description	Auth & Roles
 
 GET	/api/program/upcoming	List upcoming programs	Public
@@ -122,15 +125,23 @@ GET	/api/program/upcoming	List upcoming programs	Public
 GET	/api/program/past	List past programs	Public
 
 GET	/api/program/{name}	Get program details by name	Public
+
 GET	/api/program/id/{id}	Get program details by ID	Public
+
 GET	/api/program	List all programs (admin view)	JWT + admin only
+
 POST	/api/program	Create a new program (with photo)	JWT + admin only
+
 PATCH	/api/program/{id}	Update a program (with photo)	JWT + admin only
+
 DELETE	/api/program/{id}	Delete a program	JWT + admin only
 
 Bookings
+
 Method	Path	Description	Auth & Roles
+
 POST	/api/bookings/book	Book seats for a program (1–4 seats)	JWT + user
+
 GET	/api/bookings/my-bookings	Get bookings for the logged-in user	JWT + user
 
 
